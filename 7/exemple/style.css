@@ -1,0 +1,38 @@
+.heart
+{
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 50px;
+height: 50px;
+border: none;
+background-image: url("../heart.svg");
+background-size: contain;
+background-repeat: no-repeat;
+background-position-x: 0px;
+background-position-y:0px;
+transition: 3s;
+font-size: 3px;
+box-sizing: border-box;
+animation:3s linear infinite puls ;
+
+}
+@keyframes puls {
+	0% {width: 50px;
+		height: 50px;
+	}
+	50%{
+		width: 180px;
+		height: 180px;
+		font-size: 15px;
+		background-image: url('../heartred.svg');
+	}
+	
+	100%
+	{
+		width: 50px;
+		height: 50px;
+	}
+}

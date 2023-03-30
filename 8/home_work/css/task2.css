@@ -1,0 +1,31 @@
+.wrapper{
+    height:100px;
+    background:rgb(194, 77, 77);
+    border:1px solid black;
+}
+.wrapper2{
+    background:rgb(178, 194, 77);
+}
+.wrapper3{
+    background:#fff;
+}
+
+@media (max-width:768px) 
+{
+  .blk5
+ {
+    display: none;
+ }
+}
+ .blk14
+ {
+    display: none;
+ }
+
+ @media (max-width:768px) 
+ {
+    .blk14
+    {
+     display: block;   
+    }   
+    }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+body
+{
+	width: 100%;
+ height: auto;
+background-image: url("https://wallpaperset.com/w/full/e/c/7/525108.jpg");
+background-size: auto;
+background-repeat: no-repeat;
+display: block;
+margin: 0px;
+}
+label
+{
+ color: white;
+ font-size: 15px;
+ margin:5px;
+}
+.sondaj{
+border: 2px solid darkblue;
+width:500px;
+padding: 25px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+align-content: space-between;
+
+}
+select
+{
+width: 150px;
+height: 20px;
+border-color: darkgrey;
+border-radius: 4%;
+background-color: transparent;
+color: gray;
+padding: 2px;
+}
+input
+{
+width: 150px;
+height: 20px;
+border-color: darkgrey;
+border-radius: 4%;
+background-color: transparent;
+color: white;
+padding: 2px;
+margin: 5px;
+}
+checkbox
+{
+
+}
+</style>
+<body>
+character
+<div class="sondaj">
+	<form>
+		<label>Space(*) are obligate</label><br>
+	<label  >Sex</label>
+	<input type="radio" name="Sex" value="Men"> <label>Men</label>
+	<input type="radio" name="Sex" required value="Women"><label>Women</label><br>
+		<label>Please write your First Name *</label>
+		<input type="text" name=""  placeholder="First Name" required><br>
+		<label>Please write your Second Name * </label>
+		<input type="text" name="" placeholder="Second Name" required><br>
+		<label>Your id</label>
+		<input type="text" name="" value="#57s57"><br>
+		<label>Your mailbox *</label>
+		<input type="email" name="" placeholder="Email@some.com" required><br>
+		<label>Number phone * </label>
+		<input type="Number" name="phone"  placeholder="Only Number" required><br>
+		<label>Create your password *</label>
+		<input type="password" name="" minlength="9" placeholder="Minimum 9 characters" required><br>
+		<label>Your country </label>
+			<select >
+			<option>China</option>
+			<option selected>Moldova</option>
+			<option>France</option>
+			<option>Germani</option>
+			</select>
+			<br>
+		<label>Your Id</label>
+		<input type="text" disabled name="" placeholder="YTGis" ><br>
+		<label>Your birthday</label>
+		<input type="datetime-local" name="" required><br>
+		<label>Please write a message in 70 letters for our company</label><br>
+		<textarea maxlength="70">Write some things</textarea> <br>
+		<input type="checkbox" name="agree" required> 
+		<label>I agree with privacy policy</label>
+		<br>
+		<br>
+		<button>Accepte</button>
+		<button type="reset">Reset</button>
+		</form>
+</div>
+</body>
+</html>

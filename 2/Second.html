@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="meniu.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Second lesson
+	</title>
+</head>
+<body>	
+<div class="meniu"> 
+		<button class="btbg" onclick="unhide()" id="butlogin"> 
+	</button>
+</div>
+<form >
+<div class="displaylogin"  id="login" >
+	<center >
+	<label class="flabellogin1">Log in / Regsitration </label><br>
+	<input type="text" class="inplogin" required><br>
+	<input type="password"  class="inplogin"   id="exemple" required><br>
+	<button class="butlogin" onclick="cancel()">Cancel</button>
+	<button class="butlogin" id="buttlogin" onclick="validate()">Log in</button>
+	<button class="butlogin" onclick="unhideregistre()">Registration</button>
+	</center>
+</div>
+<div class="regis" id="regis">
+	<center>
+	<label class="flabellogin1">Registration</label><br>
+	<table>
+	<tr>
+		<th><label class="labelregistre">First Name</label></th>
+		<th><input type="text" id="fname" class="inplogin" required></th>
+	</tr>
+	<tr>
+		<th><label class="labelregistre">Second Name</label></th>
+		<th><input type="text" id="lname" class="inplogin" required></th>
+	</tr>
+	<tr>
+		<th><label class="labelregistre">Birth day</label></th>
+		<th><input type="date" id="bdate" class="inplogin" required></th>
+	</tr>
+	<tr>
+		<th><label class="labelregistre">Your mobile</label></th>
+		<th><input type="phone" id="phone"  class="inplogin" required></th>
+	</tr>
+	<tr>
+		<th><label class="labelregistre">Your mail</label></th>
+		<th><input type="mail" id="mail"  class="inplogin" placeholder="exemple@smth.com" required></th>
+	</tr>
+	<tr>
+		<th><label class="labelregistre">Create Login</label></th>
+		<th><input type="text" id="rlogin" class="inplogin" required></th>
+	</tr>
+	<tr>
+		<th><label class="labelregistre">Create your pass</label></th>
+		<th><input type="password" id="rpasword" class="inplogin" required></th>
+	</tr>
+	<tr>
+		<th><label class="labelregistre">Confirm your password</label></th>
+		<th><input type="password" id="rpasword" class="inplogin" required></th>
+	</tr>
+</table>
+<br>
+	<button class="butlogin" id="confirmbut" onclick="validate()">Confirm</button>
+	<button class="butlogin" id="cancelbut" onclick="cancel()">Cancel</button>
+	<button class="butlogin" id="back2login" onclick="back()">Back</button>
+	</center>
+</div>
+</form>
+
+</body>
+<script type="text/javascript" src="script.js"> 
+
+
+</script>
+
+</html>

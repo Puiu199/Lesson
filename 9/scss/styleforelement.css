@@ -1,0 +1,536 @@
+@import url("https://fonts-online.ru/fonts/museo-sans-cyrl");
+.top, .element, .bigdiscount, .reducere, .flowerimg, .addbusket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.inbusket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 60px;
+  background-color: #956D84;
+  background-image: url("../img/decorbg.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 16px;
+  margin: 0px;
+  box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.377);
+  font-family: Museo Sans Cyrl;
+}
+
+.quickcall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 60px;
+  background-color: #956D84;
+  background-image: url("../img/decorbg.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 16px;
+  margin: 0px;
+  box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.377);
+  border-radius: 0px 7px 7px 0px;
+}
+
+.bigprice {
+  font-size: 36px;
+  font-weight: bold;
+  color: #956D84;
+  margin-left: 30px;
+}
+
+div > ul {
+  list-style: none;
+}
+
+.listinfo {
+  width: 85%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  border: none;
+  list-style: none;
+}
+
+div > ul > li {
+  display: grid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.addbusket {
+  border: none;
+  width: 450px;
+  height: auto;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: flex-start !important;
+  margin: 30px;
+}
+
+.all > label {
+  color: #828282;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.inpnumer {
+  width: 105px;
+  height: 60px;
+  border: 1px solid;
+  font-size: 24px;
+  padding: 0px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #956D84;
+  margin-right: 10px;
+}
+
+.phone {
+  width: 320px;
+  height: 60px;
+  margin: 0px;
+  border: 1px solid;
+  border-color: #E0E0E0;
+}
+
+.comm {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 150px;
+  border: none;
+  justify-content: space-around;
+  margin-top: 0px;
+}
+
+div > a {
+  text-decoration: none;
+  color: #828282;
+}
+
+.lowprice {
+  font-size: 24px;
+  color: #828282;
+  text-decoration-line: line-through;
+  margin-left: 15px;
+}
+
+details {
+  position: relative;
+  width: 100%;
+  border: none;
+}
+
+details:focus-within {
+  color: #956D84;
+}
+
+.afisa {
+  width: 380px;
+  height: 100%;
+  background-image: url(../img/afisa.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: grid;
+  gap: 1px;
+  right: 100px;
+  left: auto;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.contailogo {
+  width: 106px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.afisa, label {
+  color: rgb(130, 130, 130);
+}
+
+.mail1, .skype, .numberphone {
+  position: relative;
+  display: grid;
+  justify-content: left;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-left: 50px;
+  justify-items: left;
+  box-sizing: border-box;
+}
+
+.numberphone > label::before {
+  content: url("../img/phone.png");
+  width: 20px;
+  margin: 5px;
+}
+
+.skype > label::before {
+  content: url("../img/skype.png");
+  width: 20px;
+  margin: 5px;
+}
+
+.mail1 > label::before {
+  content: url("../img/mail.png");
+  width: 20px;
+  margin: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: rgb(51, 51, 51);
+  margin-top: 70px;
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+ul > label {
+  width: 250px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.listfooter {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgb(149, 109, 132);
+  font-size: 16px;
+  padding: 0px !important;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.listfooter > ul {
+  width: 250px;
+  text-align: left;
+  border: none;
+  padding: 5px;
+  margin: 20px;
+}
+
+.paymant {
+  width: 350px;
+  height: auto;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pay {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  background-image: url("../img/backgroud.svg");
+  background-size: 100%;
+  background-attachment: scroll;
+  margin: 0px;
+  font-family: Museo Sans Cyrl;
+}
+
+header {
+  margin: 0px;
+  margin-bottom: 35px;
+}
+
+.top, .element, .bigdiscount, .reducere, .flowerimg, .addbusket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigheart {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/heart.svg");
+  top: 5%;
+  right: 5%;
+}
+
+.all {
+  width: auto;
+  height: 700px;
+  padding: 2px;
+  display: grid;
+  background-color: white;
+  border: none;
+}
+
+.windowimage {
+  position: relative;
+  height: auto;
+  background-color: #FBF9FA;
+  box-sizing: border-box;
+  border: none;
+}
+
+.flowerimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.listing {
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  background-color: #FBF9FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.reducere {
+  position: absolute;
+  color: #000000;
+  border: 1px dashed #E72222;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 15px;
+  z-index: 5;
+  top: 5%;
+  left: 5%;
+}
+
+.bigdiscount {
+  position: absolute;
+  color: #000000;
+  border: 1px dashed #E72222;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  z-index: 5;
+  top: 5%;
+  left: 5%;
+}
+
+.stars {
+  width: 50%;
+  background-image: url(../img/stars5.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position-x: 100%;
+  padding-left: 35px;
+}
+
+.stars:hover {
+  background-image: url("../img/stars5gold.svg");
+}
+
+.map {
+  width: 96%;
+  height: 500px;
+  display: flex;
+  border: 1px solid black;
+  padding: 0px;
+  margin-top: 80px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  position: relative;
+}
+
+.smallheart {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/heart.svg");
+  top: 5%;
+  right: 5%;
+}
+
+.smalprice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #956D84;
+  margin-left: auto;
+  margin-right: 7%;
+}
+
+.element {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  padding: 5%;
+  box-sizing: border-box;
+  border: none;
+}
+
+.element > img {
+  width: 100%;
+}
+
+.top {
+  position: absolute;
+  color: #000000;
+  border: 1px dashed #E72222;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  z-index: 5;
+  text-transform: uppercase;
+  background-color: rgba(157, 117, 140, 0.39);
+  color: #956D84;
+  border: none;
+  right: 5%;
+  bottom: 5%;
+}
+
+.principal {
+  width: 290px;
+  height: 520px;
+  padding: 2px;
+  border: 1px solid #a27f93;
+  box-sizing: border-box;
+  background-color: #fbf9fa;
+  position: relative;
+  box-shadow: 3px 5px 2px gray;
+  display: block;
+}
+
+.detalies {
+  width: 100%;
+  height: 25%;
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  background-color: #ffffff;
+  border: none;
+  margin: 1px;
+}
+
+.titleallelem {
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+
+.titlupro {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  display: flex;
+  text-align: justify;
+  text-justify: inter-word;
+  justify-content: space-around;
+  border: none;
+}
+
+.cost {
+  display: grid;
+  border: none;
+  margin: 1px;
+}
+
+.priceoff {
+  font-size: 18px;
+  color: #828282;
+  text-decoration-line: line-through;
+  margin-left: 15px;
+  font-weight: 300;
+}
+
+.by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 60px;
+  background-color: #956D84;
+  background-image: url("../img/decorbg.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 16px;
+  margin: 0px;
+  box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.377);
+  font-size: 18px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.quicklyby {
+  margin: auto;
+  text-decoration: none;
+  color: #956D84;
+}
+
+.arangeele {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=styleforelement.css.map */

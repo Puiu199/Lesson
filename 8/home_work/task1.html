@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="condition">
+        Начальные стили установленны. Вставьте только нужные.<br>
+        Условие выполнения. Каждый блок показывает где и когда он виден. Пропишите @media запрос
+        таким образом, что бы он соответствовал его описанию внутри себя
+    </div>
+    <div class="flex-block">
+        <div class="block b1">я виден только на телефоне и не виден больше чем 600px</div>
+        <div class="block b2">я виден везде</div>
+        <div class="block b3">я виден только на экранах больше чем 1140px</div>
+        <div class="block b4">я виден между 700px и 1000px</div>
+    </div>
+    <style>
+        .flex-block{
+            display:flex;
+        }
+        .block{
+            background:yellow;
+            height:120px;
+            width:120px;
+            margin:10px;
+            float:left;
+            padding:10px;
+        }
+        .b3
+        {
+            display: none;
+        }
+        .b4
+        {
+            display: none;
+        }
+
+        @media (min-width:  600px) {
+            .b1
+            {
+                display: none;
+            }
+            @media (min-width:1140px) {
+                .b3
+                {
+                    display:block;
+                }
+            }
+            @media (min-width:700px) and (max-width: 1000px ) 
+            {
+                .b4
+                {
+                    display: block;
+                }
+                
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@import "_second.scss";
+@import "_afisa.scss";
+@import"_footer.scss";
+body
+{
+    background-image: url("../img/backgroud.svg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment: scroll;    
+    margin:0px;  
+    padding: 0px;
+    
+}
+header
+{ 
+    margin: 0px;
+    margin-bottom: 35px;
+
+}
+
+%aligncontent
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin like($wtlike,$htlike)
+{
+    width: $wtlike;
+    height: $htlike;
+    position: absolute;    
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+.bigheart
+{
+    @include like(50px,50px);  
+    background-image:url('../img/heart.svg');  
+    top: 5%;
+    right: 5%;
+}
+.all
+{
+    width: auto;
+    height: 700px;    
+    padding: 2px;
+    display: grid;    
+    background-color: white;    
+    border: none;
+}
+.windowimage
+{
+    position: relative;
+    height: auto;
+    background-color: $bgcolorf;   
+    box-sizing: border-box;
+    border: none;
+    
+}
+@mixin floweritem($wtfl,$htfl)
+{
+    position: relative;
+    width: $wtfl;
+    height: $htfl;
+    padding: 5%;
+    box-sizing: border-box;    
+    @extend %aligncontent  
+}
+.flowerimg
+{
+    @include floweritem(100%,100%);
+
+}
+
+.listing
+{
+    width: 200px;
+    height:200px;
+    border: 3px solid white;   
+    background-color:#FBF9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0px;
+}
+@mixin discount($wtd,$htd,$fts)
+{
+    position: absolute;
+    color:#000000;
+    border:1px dashed  #E72222;
+    border-radius: 50%;
+    width: $wtd;
+    height: $htd;
+    font-size:$fts;
+    z-index: 5;   
+    @extend %aligncontent;
+}
+.reducere
+{
+    @include discount (45px,45px,15px);
+    top: 5%;
+    left: 5%;   
+}
+.bigdiscount
+{
+    @include discount (55px,55px,24px);
+    top: 5%;
+    left: 5%; 
+       
+}
+.stars
+{
+    width: 50%;
+    background-image: url(../img/stars5.svg); 
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position-x: 100%;
+    padding-left: 35px;
+}
+.stars:hover
+{
+    background-image: url('../img/stars5gold.svg');
+}
+.map
+{
+    width: 96%;
+   height:500px;
+   display: flex; 
+   border: 1px solid black;
+   padding: 0px;
+   margin-top: 80px;
+   margin-left: auto !important;
+   margin-right: auto !important;
+   position: relative;
+}

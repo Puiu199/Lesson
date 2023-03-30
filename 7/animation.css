@@ -1,0 +1,60 @@
+.off
+{
+	transform: rotate(0deg);
+	animation: 5s linear infinite stop;
+	-webkit-animation:5s linear infinite stop;
+}
+.reducere 
+{ 
+	transform: rotate(0deg);
+	animation: 5s linear infinite rot;
+	-webkit-animation:5s linear infinite rot;
+}
+@-webkit-keyframes rot
+{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+@keyframes rot
+{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+@-webkit-keyframes stop
+{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(-360deg);}
+}
+@keyframes stop
+{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(-360deg);}
+}
+.heart:active
+{
+	background-image: url("heartred.svg");
+	border-radius: 0%;
+}
+.top:hover
+{
+	top: -10px;
+	transform: rotate(360deg);
+	transition-duration: 1s;
+}
+.btby:active
+{
+	background-color: lime !important;
+}
+.btby:hover
+{
+	background-color:#684b68 ;
+	box-shadow: 2px 3px 3px grey;
+}
+.heart:hover
+{
+	background-image: url("heartred.svg");
+}
+.principal:hover
+{
+box-shadow: 5px 8px 12px darkblue;
+}

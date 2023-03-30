@@ -1,0 +1,108 @@
+@import "style.scss";
+.smallheart
+{
+    @include like(25px,25px);
+    background-image:url('../img/heart.svg') ;
+    top: 5%;
+    right: 5%;
+}
+.smalprice {
+	font-size: 18px;
+	font-weight: bold;
+	color: #956D84;
+	margin-left: auto;
+	margin-right: 7%;
+}
+.element
+{   
+    @include floweritem(100%,75%) ;
+      border: none
+}
+.element > img
+{
+    width: 100%;
+}
+.top
+{
+    @include discount(50px,50px,16px);
+    text-transform: uppercase;
+    background-color: rgba(157, 117, 140, 0.39);
+    color: #956D84;
+    border: none;
+    right: 5%;
+    bottom: 5%;
+}
+.principal
+{
+	width: 290px;
+	height: 520px;
+	padding: 2px;
+	border:1px solid #a27f93 ;
+	box-sizing: border-box;
+	background-color: #fbf9fa;	
+	position: relative;
+	box-shadow: 3px 5px 2px gray;
+    display: block;	
+}
+.detalies
+{  
+	width: 100%;
+	height: 25%;
+	box-sizing: border-box;
+	position: relative;
+	display: grid;
+	background-color: #ffffff;
+    border: none;
+    margin: 1px;
+}
+.titleallelem 
+{
+	color: rgba(51, 51, 51, 1);
+	font-weight: 700;
+	font-size: 48px;
+	display: flex;
+	justify-content: center;
+	margin-top: 130px;
+	margin-bottom: 50px;
+}
+.titlupro
+{
+	color: rgba(51, 51, 51, 1);
+	font-size: 18px;
+	display: flex;
+	text-align: justify;
+	text-justify: inter-word;
+	justify-content: space-around;
+	border: none;	
+}
+.cost
+{	
+	display: grid;
+	border: none;
+	margin: 1px;	
+}
+.priceoff
+{
+	@include offprice(18px);
+	font-weight: 300;
+}
+.by
+{
+    @include bt(220px);
+	font-size: 18px;
+    margin: auto;
+	font-weight: bold;
+}
+.quicklyby
+{
+	margin: auto;
+	text-decoration: none;
+	color: $colbrwn;
+}
+.arangeele
+{
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}

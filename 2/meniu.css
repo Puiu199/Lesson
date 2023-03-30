@@ -1,0 +1,29 @@
+.meniu
+{ 
+	background: transparent;
+	width: auto;
+	height: auto;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 3px;
+	margin-top:35px;
+	position: static;
+	float: right;
+	margin-right: 15px;
+}
+.btbg
+{
+background-image: url("https://icons.veryicon.com/png/o/miscellaneous/basic-elements/login-22.png");
+width:100px;
+height: 100px;
+background-repeat: no-repeat;
+background-color: transparent;
+background-size: 100%;
+position: fixed;
+padding: 0px;
+cursor: pointer;
+border: none;
+left: 45%;
+top: 150px;
+}

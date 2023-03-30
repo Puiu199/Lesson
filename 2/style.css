@@ -1,0 +1,97 @@
+body
+{
+	background: url("https://rare-gallery.com/uploads/posts/582587-brick.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: revert;}
+.inplogin
+{
+	width: 245px;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	background: transparent;
+	border-color: #0EF9F1;
+	border-width: 5px;
+	border-bottom-style:double;;
+	border-radius:7px;
+	color: black;
+	margin-top: 50px;
+	text-align: center;
+	margin-left: 20px;
+}
+.butlogin
+{
+	width: auto;
+	height: 30px;
+	border-radius: 5px;
+	margin-top:75px;
+	margin-right:25px;
+	background-color: #bdc3cf;
+	border-color: transparent;
+	font-family: cursive;
+	font-size: 15px;
+	cursor: pointer;
+}
+.displaylogin
+{
+	position: fixed;
+	margin-right:50%;
+	margin-left: 35%;
+	width: 500px;
+	height: auto;
+	margin-top: 120px;
+	padding: 3%;
+    border-width: 1.5px;
+    backdrop-filter: blur(5px);
+    border-color: transparent;
+    border-style:solid;
+    display:none;
+    box-shadow: 0px 5px 15px 10px #e1e3ed;
+    float: center;
+}
+.flabellogin1
+{
+	font-family: cursive;
+	font-size: 30px;
+	text-shadow:#1D7874 2px 0 7px;
+	font-weight: bold;
+}
+.style
+{
+	border-width: 0px;
+	width: 48px;
+	height: 48px;
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	border-radius: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+.regis
+{
+	position: absolute;
+	margin-right:50%;
+	margin-left: 35%;
+	width: 500px;
+	height: auto;
+	margin-top: 5%;
+	padding: 2px;
+    border-width: 1.5px;
+    backdrop-filter: blur(5px);
+    border-color: transparent;
+    border-style:solid;
+    display:none;
+    box-shadow: 0px 5px 15px 10px #e1e3ed;
+
+}
+.labelregistre
+{
+	font-family: cursive;
+	color: white;
+	font-size: 15px;
+	margin: 5px;
+	align-items: start;
+	text-align:left;
+
+}

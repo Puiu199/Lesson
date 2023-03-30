@@ -1,0 +1,54 @@
+.bg
+{
+	display: flex;
+	align-items: center;
+	width: auto;
+	height: 30px;
+	padding: 1px;
+	border: none;
+	overflow: hidden;
+}
+.size
+{
+	display: grid;
+	width: 35px;
+	height: auto;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:relative;
+	border: none;
+}
+.first
+{
+	position: relative;
+	top: 0px;
+}
+.second
+{
+	position: relative;
+	top: 0px;
+}
+.size:hover
+{
+	
+	animation-name: modify;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-delay: 0;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+
+}
+@keyframes modify {
+	from {
+		top:0px;
+	}
+	to{ 
+		top:-33px;
+
+	}
+	
+}

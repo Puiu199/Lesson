@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    
+</head>
+<style>
+    body
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .go
+    {
+        margin: auto;
+        width: auto;
+        height: auto;
+        border: 2px dashed darkblue;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        display: none;
+        padding: 15px;
+    }
+    label
+    { 
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+    }
+    .red
+    {
+        width: 100px;
+        height:50px;
+        background-color: red;
+        border: none;
+        color: white;
+        border-radius: 25px;
+    }
+    .blu
+    {
+        width: 100px;
+        height:50px;
+        border-radius: 25px;
+        background-color: blue;
+        color: white;
+        border: none;
+    }
+    #answer
+    {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 500px;
+        height: auto;
+        margin: auto;
+        border: none;
+        justify-items: center;
+        padding: 15px;
+    }
+    p
+    {
+        background-color: rgb(173, 216, 230,35%);
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 1px 2px 10px lightblue;
+        text-transform: capitalize;
+    }
+    
+</style>
+<body>
+    <div id="answer">
+        <p>
+            примешь синюю таблетку и сказке конец.примешь красную таблетку войдешь в строну чудес
+        </p>
+        <div>
+        <button class="blu" onclick="cancel()">Отмена</button>
+        <button class="red" onclick="start()">Поехали</button>
+    </div>
+    </div>
+    
+
+    <div class="go" id="done">
+        <p>Введите номер</p>
+        <input id="number1" type="number" placeholder="0"><br>
+        <p>Введите номер</p>
+        <input id="number2" type="number" placeholder="0"><br>
+        <p>Результат:</p><h2 id="resultat"></h2>
+        <button onclick="calcul()">Рачё</button>   
+        <button onclick="verifica()">Навыки</button>
+        <button onclick="interes()">Оценка</button>
+    </div>
+</body>
+<script>
+
+    function cancel()
+    {
+        alert("Вы выбраль синюю таблетку тут и сказке конец"); 
+    }
+    function start()
+    {
+        document.getElementById("done").style.display="block";
+        document.getElementById("answer").style.display="none";
+    }
+    function calcul() 
+    {
+        let num1=document.getElementById('number1').value;
+        let num2=document.getElementById('number2').value; 
+        let result;        
+        result=++num1 + --num2; 
+        console.log(result);
+        document.getElementById('resultat').innerHTML=result;  
+        alert(`${++num1} + ${--num2} = ${++num1 + --num2}`)
+    }
+    function verifica()
+    {
+      let note=prompt('"Оцените ваши знания по HTML от 1 до 5"');
+      note=+note;
+      switch (note)
+        {
+            case 1:
+            case 2:alert("Ваших знаний пока не достаточно, продолжайте учить");break;
+            case 3:alert("Bы на пути к успеху");break;
+            case 4:alert("Mы бы хотели пригласить вас на собеседование");break;
+            case 5:alert("У нас есть для вас работа!");break;
+            default:alert("Вы ввели некорректные данные");
+        }
+        }
+    function interes()
+        {
+            let h=prompt("Сколько часов в день вы обучаетесь программированию?");
+            h=+h;
+            console.log(h);
+            if(h!=0 && h<3)
+                {
+                    return alert("Маловато, надо бы по больше");
+                }      
+            if(h>=3 && h<=5)
+                {
+                    return alert("Весьма не плохо, а больше сможете?");
+                }
+            if(h>=3 && h<=5)
+                {
+                    return alert("Весьма не плохо, а больше сможете?");
+                }
+            if (h>=6 && h<=24) 
+                {
+                    return alert("Ого, ваше стремление похвально!");    
+                }
+            return alert("Похоже вы ввели некорректные данные"); 
+        }  
+</script>
+</html>

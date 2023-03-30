@@ -1,0 +1,81 @@
+.afisa
+{
+    width: 380px;
+    height: 100%;
+    background-image: url(../img/afisa.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;    
+    display: grid;
+    gap: 1px;
+    right: 100px;   
+    left: auto; 
+    padding: 2px;
+    box-sizing: border-box;
+}
+.contailogo
+{
+    width:106px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.afisa,label
+{
+    color: rgba(130, 130, 130, 1);
+}
+
+%sablon
+{
+    position: relative;
+    display: grid;
+    justify-content: left;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-left: 50px;
+    justify-items: left;
+    box-sizing: border-box
+    
+}
+.numberphone
+{
+   @extend %sablon;
+}
+.numberphone>label::before
+{
+    content: url("../img/phone.png");
+    width: 20px;
+    margin: 5px;
+}
+.skype
+{
+    @extend %sablon;
+}
+.skype>label::before
+{
+    content: url("../img/skype.png");
+    width: 20px;
+    margin: 5px;
+}
+.mail1
+{
+    @extend %sablon;
+}
+.mail1>label::before
+{
+    content: url("../img/mail.png");
+    width: 20px;
+    margin: 5px;
+}

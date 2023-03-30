@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/task2.css">
+</head>
+<body>
+    <div class="instruction">
+        <p>используйте вставку container,row,col в пропущенных местах class=""</p>
+        <p><b>Внимание</b> вствлять нужно только в пропущенных class="тут" местах. и только bootstrap классы</p>
+        <p>используйте col, col-auto, col-xs, col-sm, col-md, col-lg</p>
+        <p>так же используйте колоноки по цифрам1-12 по типу: col-2, col-md-4, col-sm-3 и т.д.</p>
+    </div>
+    <h2>Первая часть </h2>
+    <div class="container">
+        <div class="row g-2"> 
+            <div class="col-12">
+                <div class="wrapper">
+                    этот блок col имеет всю ширину у родителя
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="wrapper">
+                    этот блок col имеет 50% ширины от общего пространства
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="wrapper">
+                    этот блок col имеет 50% ширины от общего пространства
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>вторая часть</h2>
+    <div class="container">
+        <div class="row ">
+            <div class="col-auto">
+                <div class="wrapper">
+                    этот блок col автоматическую ширину
+                </div>
+            </div>
+            <div class="col">
+                <div class="wrapper">
+                    этот блок col занимает все пустое пространство
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="wrapper">
+                    этот блок col занимает ширину в 2 колонки
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>третья часть</h2>
+    <div class="container">
+        <div class="row g-2">
+            <div class="col-sm-6">
+                <div class="wrapper">
+                    этот блок col занимает 100% ширину на мобильном устройстве, а на большем разрешении имеет 6 колонки
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="wrapper">
+                    этот блок col занимает 100% ширину на мобильном устройстве, а на большем разрешении имеет 3 колонки
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="wrapper">
+                    этот блок col занимает 100% ширину на мобильном устройстве, а на большем разрешении имеет 3 колонки
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>четвертая часть</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 blk5">
+                <div class="wrapper ">
+                   я блок шириной 5 колонок md разрешении(и больше), но полностью не виден в xs и sm
+                </div>
+            </div>
+            <div class="col-4 blk14">
+                <div class="wrapper">
+                   я блок из 4 колонок и не виден на больших экранах, на размерах md и xl
+                </div>
+            </div>
+            <div class="col">
+                <div class="wrapper">
+                    я произволного размера, занимаю столько места, сколько осталось. виден везде
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <h2>пятая часть</h2>
+    <div class="container">
+        <div class="col-6" style="text-align:center">
+            <div class="wrapper">
+                я блок имею 6 колонк
+                <div class="row">
+                    <div class="col-6">
+                        <div class="wrapper2">
+                            я блок внутри и имею 6 колонок
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="wrapper2">
+                            я блок внутри и имею 6 колонок
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="wrapper3">
+                Я блок имею 1 колонку. Я бесцветный.
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="wrapper">
+                Я блок имею 5 колонок
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

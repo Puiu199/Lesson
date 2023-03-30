@@ -1,0 +1,167 @@
+.body
+{
+	padding:20px;
+}
+.things
+{
+	width: 100%;
+    height: auto;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	align-content: center;
+}
+.list-pro
+{
+	display: flex;	
+}
+.principal
+{
+	width: 250px;
+	height: 460px;
+	padding: 2px;
+	border:2px solid #a27f93 ;
+	box-sizing: border-box;
+	background-color: #fbf9fa;
+	float: left;
+	margin: 35px;
+	position: relative;
+	box-shadow: 3px 5px 2px gray;
+}
+.size
+{
+    width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	margin: 10px;
+	position: absolute;
+}
+.titlu
+{
+	display: block;
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+	margin-left: 45%;
+	position: absolute;
+}
+
+.heart
+{
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	background-image: url("heart.svg");
+	background-repeat: no-repeat;
+	background-size:90%;
+	background-position-y: 100%;
+	cursor: pointer;
+	z-index: 2;
+	right: 10px;
+		
+}
+.reducere
+{
+	border-color: #e82c2c;
+	color: #e82c2c;
+	margin: 15px;
+	border-style: dashed;
+	border-width: 1.5px;
+	position:absolute;
+	padding: 1px;
+	z-index: 2;
+	}
+.top
+{
+	background-color: #d7c6cf;
+	color: #9c778c;
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 90%;
+	margin-bottom: 5px;
+	font-size: 15px;
+	
+}
+.element
+{
+	width: 100%;
+	height: 70%;
+	border: none;
+	background-image: url("https://www.pngall.com/wp-content/uploads/3/Bouquet-PNG-Free-Download.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position-y:90%;
+	margin: 0px;
+	background-color: #fbf9fa;
+	position: relative;
+	padding: 5px;
+	padding-top: 35px;
+	box-sizing: border-box;
+	
+}
+.detalies
+{
+	width: 100%;
+	height: 30%;
+	border: none;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0px;
+	background-color: #ffffff;
+
+}
+.marauto
+{
+	color:gray; 
+	text-decoration-color: #a27f93;
+	margin-left: 32%;
+}
+.textoff
+{
+	color: gray;
+	text-decoration:line-through;
+	margin-top: 2px;
+	margin-left: 10px;
+	letter-spacing: 1.5px;
+	margin-right: 5px;
+}
+.titlupro
+{
+	color: black;
+	font-weight: bold;
+
+}
+.price
+{
+	color:#9a6d85;
+	font-weight: bold;
+	text-transform: none;
+	letter-spacing: 1.5px;
+	margin-left: auto;
+	margin-right: 5px;
+}
+.btby
+{
+	display: flex;
+	border: 1px solid black;
+	width: 98%;
+	height: 50px;
+	background-color:#956d84;
+	border-radius: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin: 2px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	box-shadow:0px 1px 2px black inset;
+}
