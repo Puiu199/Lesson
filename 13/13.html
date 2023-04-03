@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>  
+</head>
+<style>
+    div
+    {
+        margin: auto;
+        margin-top: 35px;
+        border: 1px solid darkcyan;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 350px;
+        height: auto;
+    }
+    .add_car
+    {
+        display: none;
+    }
+ 
+
+</style>
+<body>
+   <div class="calculare">
+        <label>Introduceti numarul de copii</label><br>
+        <input id="insert" type="text">
+        <button onclick="ciclu()">Start</button>
+    </div>
+        
+    <div class="add_car" id="add_car">     
+        <label>Introduceti numarul de inmatriculare</label><br>
+        <input id="numar" type="text" placeholder="ABC152" required> <br>
+        <label> Marca Automobilului :</label><br>
+        <input id="model1" type="text"  placeholder="BMW" required><br>
+        <label>Tara producatoare</label><br>
+        <input id="country" type="text" placeholder="Germany" required><br>
+        <label>Anul Fabricari automobiluilui</label><br>
+        <input id="anul1" type="text" placeholder="2010" required><br><br>
+        <label>Culoarea automobiluilui</label><br>
+        <input id="culoare" type="text"  placeholder="Grey" required><br><br>
+        <button onclick="addcardow()"required >Addcardown</button>
+        <button onclick="addcarfirst()"required >Addcarfirs</button>         
+        <button onclick="viewcar()" class="view_car" title="View all list car" required >View cars</button>
+       <button onclick="remove_car()">Remove last car </button>
+        <div>
+            <input id="chei" type="text"><br>
+            <input id="val" type="text"><br>
+            <button onclick="cauta()">Actioneaza</button>
+        </div>
+    </div>
+   
+    <div class="login" id="login">
+        <br>
+        <label> Login </label>
+        <input id="log"><br>
+        <label>Password</label>
+        <input id="pass" type="password"><br>
+        <button onclick="connect()">Logon</button>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="aces.js"></script>
+</html>
