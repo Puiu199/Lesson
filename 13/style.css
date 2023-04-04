@@ -1,0 +1,26 @@
+div
+    {
+        margin: auto;
+        margin-top: 35px;
+        border: 1px solid darkcyan;
+        display: grid ;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 350px;
+        height: auto;
+    }
+    .add_car
+    {
+        display: none;
+    }
+    form
+    {
+        display: grid;
+    }
+   
+    button
+    {
+        margin: 5px;
+    }
+ 

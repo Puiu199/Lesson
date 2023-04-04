@@ -21,8 +21,12 @@ let cars=
     { nr_imatriculare:"ZZZ123",model:"Bmw",madeIn:"Germany",years:"2010",col:"Green"},
     { nr_imatriculare:"MER563",model:"Mercedes",madeIn:"Germany",years:"2008",col:"Black"},
     { nr_imatriculare:"SUS552",model:"Mercedes",madeIn:"Germany",years:"2008",col:"Blue"},
+    { nr_imatriculare:"DIM007",model:"HONDA",madeIn:"MOLDOVA",years:"2022",col:"BLACK"},
 ];  
-let n=cars.length;
+remove_car_first();
+console.log(cars);
+
+
 function addcardow()
 { 
     in_nr_c=document.getElementById("numar").value;
@@ -63,18 +67,46 @@ function addcarfirst()
 }
 function viewcar()
 {
-    alert("In stoc sunt numai :"+cars.length);   
-       return console.log(cars);      
+    console.log("--------------------------------------------------");
+    alert("In stoc sunt :"+cars.length +"car(s)");
+   for (let i=0;i<cars.length;i++)
+   {
+    console.log(cars[i]);
+   }
+   console.log("--------------------------------------------------")
 } 
-function remove_car()
+function remove_car_down()
 {
     cars.pop();
-    console.log(cars)
+    alert("In stoc au ramas  numai :"+cars.length+" masini");   
+    console.log(cars)    
 }
-function cauta() 
-{ 
-    num_val=document.getElementById("val").value;
-
-    
+function remove_car_first()
+{
+    cars.shift();
+    alert("In stoc au ramas  numai :"+cars.length+" masini");   
        
 }
+
+function cauta() 
+{ 
+    inm=document.getElementById("numar").value;
+        
+   let car=cars.find(item=>item.nr_imatriculare==inm);
+
+   alert("Modelul: "+car.model+"; Tara de originre : "+car.madeIn+"; Anulu fabricarii :"+car.years+"; Culoarea :"+car.col);    
+    
+
+}
+function inlocuire()
+{
+    nr_inm=document.getElementById("inmatriculat").value;
+    vall=document.getElementById("valoare").value;   
+
+   let car =cars.find(item=>item.nr_imatriculare==nr_inm);
+  
+    car.model=vall;
+   alert("Modelul a fost modificat cu succes");
+}
+   
+

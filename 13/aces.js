@@ -14,7 +14,7 @@ function connect()
 
     if(login_admin==user[0].login && pass_admin==user[0].password)
     {
-       document.getElementById("add_car").style.display="block";       
+       document.getElementById("add_car").style.display="grid";       
         document.getElementById("login").style.display="none";
     } 
      else
