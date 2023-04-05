@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <input type="text" class="name"  placeholder="Ваше Имя для связи">
+                </div>
+                <div class="col-4">
+                    <input type="text" class="phone"  placeholder="Ваш телефон для связи">
+                </div>
+                <div class="col-4">
+                    <input type="button" class="btn" onclick="check()" value="Отправить">
+                </div> 
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/maintask2.js">
+
+        /*
+            1. Создайте переменную в которой будут храниться данные из input name и phone
+            2. По клику на .btn нужно сделать проверку что поля из пункта 1 не пустые
+            3. Если какое то поле выдает ошибку при заполнении, то сделать  подкрасить этот
+                input в background  вот такого цвета #ffb4b4 и alert сделать вывод что пользователь
+                сделал ошибку при вводе (если это в телефоне ошибка, то указать, если в имени, тоже указать)
+            
+            3.1 Когда пользователь кликнет по полю, то оно вновь должно стать цвета #eaeaea как и было
+            
+            4. В поле где телефон, пользователь может указаывать произволные данные, поэтому проверка на числа
+                или цифры в этом задании исключается и можно не выполнять
+            5. Если данные заполненны и ошибок не возникает, то после клика по кнопке вызвать alert с информацией, что
+                все данные введены верно. А потом сделать displat none всем кнопкам и полям.
+
+            Задание со звездочкой для тех, кто хочет посложнее:
+            1. Сделайте добавление данных из формы в объект или массив
+            2. Если данные в массиве заполнены, то сделайте вывод в console.log "ваше имя" + имя из массива
+                                                                    console.log "ваш телефон" + телефон из массива
+               вывод текста можно сделать в html вместо самой формы, если пожелаете.
+            
+        */
+    </script>
+</body>
+</html>

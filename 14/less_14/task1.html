@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="wrapper-img">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                    <a href="images/img1.jpg" class="link-img">Ссылка на изображение</a>
+                </div>
+                <div class="col-3">
+                    <div class="wrapper-img">
+                        <img src="images/img2.jpg" alt="">
+                    </div>
+                    <a href="images/img2.jpg" class="link-img">Ссылка на изображение</a>
+                </div>
+                <div class="col-3">
+                    <div class="wrapper-img">
+                        <img src="images/img3.jpg" alt="">
+                    </div>
+                    <a href="images/img3.jpg" class="link-img">Ссылка на изображение</a>
+                </div>
+                <div class="col-3">
+                    <div class="wrapper-img">
+                        <img src="images/img4.jpg" alt="">
+                    </div>
+                    <a href="images/img4.jpg" class="link-img">Ссылка на изображение</a>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="/js/maintask1.js">
+    
+</script>
+    
+       <!--
+        Задание 1
+        Дано 4 изображения
+
+        1. Создайте переменную которая будет получать querySelectorAll все изображения
+        2. Напишите forEach цикл который будет работать с этими изображениями через слушатель событий addEventListener 
+        3. На событие click по изображению, кликнутое изображение должно уменьшаться style.opacity = ".5";
+        
+        4. Создайте другой цикл, который по принципу пунктов 2 и 3 будет при событии mouseout возвращать этому изображению ширину style.width = "100%";
+        5. По принципу пунктов 1-3 создайте переменную и событие, которое при наведение (mouseover) на ссылки
+            будет подкрашивать ссылки зеленным цветом, при событии увода мыши (mouseout) делать ссылки черными
+        
+
+        6. В пункте 5 используйте event что бы получить event.type и event.target в console.log()
+        7. По принципу пункта 5 сделайте событие которое будет менять цвет border у картинки при наведении на зеленный,
+            а когда уводишь мышку снова на желтый
+        -------------------------------------------
+        Теперь пункт со звездочкой, для тех, кто хочет попробовать что то посложнее)
+
+        1. Создайте цикл forEach который по клику на ссылки будет запрещать переход e.preventDefault 
+            и если пользователь кликнул по ссылке, то изображение над ссылкой должно исчезнуть style.display="none";
+        
+            Даю подсказку, как один из вариантов решения задачи forEach должен иметь 
+            аргументы (item, i) и внутри этого цикла нужно использовать переменную от изображения.
+
+        -->
+  
+</body>
+</html>
