@@ -1,44 +1,35 @@
-butn=document.querySelector('.btn');
-all_inp=document.querySelectorAll('input')
- 
-// function verification if intut have someone
-function check()
+function validare()
 {
-inpname=document.querySelector('.name').value;
-inpphone=document.querySelector('.phone').value;
-a=[inpname,inpphone];
-if(inpname=='' && inpphone=='')
-{
-    return alert("Nu ati introdus datele")
-} 
-if(inpname=='' && inpphone!='')
-{
-    return alert("Nu ati introdus numele")
-}
-if(inpname!='' && inpphone=='')
-{
-    return alert("Nu ati introdus Numarul de telefon")
-}
-else alert("Datele au fost trimise") 
-
-}
-butn.addEventListener('click',check);
-// finish
-
-all_inp.forEach(function(item,i)
-   { // color input if click on input
-    item.addEventListener('mouseup',function()
+    let nr_name=$('.name').val();
+    let nr_phone=$('.phone').val();  
+        if(nr_name==0 && nr_phone==0)
     {
-        this.style.background="#ffb4b4";  
-    });
-});
-    all_inp.forEach(function(item,i)
-   {
-    // funtion for reset color for input
-    item.addEventListener('blur',function()
+        $('.name').addClass('error');
+        $('.phone').addClass('error');
+        alert('вы не заполняль поле имя и телефон')
+    }
+    else if (nr_name==0)
     {
-        this.style.background="#eaeaea";
-    });});
-   
-    console.log(all_inp.type);
+        $('.name').addClass('error');
+        $('.phone').removeClass('error');
+        $('.phone').addClass('done');
+        alert('вы не заполняль поле имя');
+    }
+    else if (nr_phone==0)   
+    {
+        $('.phone').addClass('error');
+        $('.name').removeClass('error');
+        $('.name').addClass('done');
+        alert('вы не заполняль поле телефон');
+    }
+    else { $('.phone').removeClass('error');
+    $('.phone').addClass('done');
+    $('.name').removeClass('error');
+    $('.name').addClass('done');
+    let all=[$('.name').val(),$('.phone').val()];
+    alert("Ваше имя :  "+all[0]+"; Ваш телефон  :"+all[1]);
+}
+};
+
+$('.btn').on('click',validare);
 

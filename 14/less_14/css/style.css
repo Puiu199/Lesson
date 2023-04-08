@@ -7,6 +7,14 @@ img{
     margin:0px auto;
     border:3px solid yellow;
 }
+.error
+{
+    background-color: #ffb4b4 ;
+}
+.done
+{
+    background: greenyellow;
+}
 a{
     font-size:18px;
     text-align:center;
@@ -32,8 +40,4 @@ input {
 }
 ::placeholder {
 color: rgba(0, 0, 0, 0.266);
-}
-.error
-{
-    background-color: #ffb4b4;
 }
