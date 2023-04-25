@@ -1,0 +1,28 @@
+let inputMDL=document.querySelector('#mdl');
+let inputUSD=document.querySelector('#usd');
+let inputEUR=document.querySelector('#eur');
+
+inputMDL.addEventListener('input',function()
+{
+    let request=new XMLHttpRequest(); //conectarea cu fisierul json
+		
+//GET- pentru citirea(preuluare) datelor din fisierul curent.json
+//POST- pentru trimitrea datelor in fisier curent.json
+ 
+    request.open('GET','curent.json');//
+
+    request.setRequestHeader('Contentt-type','application/json; charset=utf-8');//OBLIGATRIU codificarea informatiei la preluarea din fiesierul curent.json
+
+    request.send(); // transmiterea informatiei din fisier catre utilizator
+
+    request.addEventListener('readystatechange',function()
+    {
+    //'4' este ultima stadie de conctare cu curent.json
+
+	if(request.readyState===4 && request.status=== 200) //verificarea daca curent.json(fisierul) este deschis(conectata)
+{
+    console.log(JSON.parse(request.response)) //afisarea datelor preluate din curent.json si trasnformarea in obiect
+}
+    })
+
+}

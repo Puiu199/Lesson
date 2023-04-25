@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Viorika",
+        "age":"29",
+        "img":"./images/1.jpg"
+    },
+    {
+        "name":"Tatiana",
+        "age":"21",
+        "img":"./images/2.jpg"
+    },
+    {
+        "name":"Elena",
+        "age":"34",
+        "img":"./images/3.jpg"
+    }
+]

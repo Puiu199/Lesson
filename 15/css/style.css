@@ -64,4 +64,16 @@
 }
 .wrap-img.active{
     border-color:red;
+    animation: del 2s linear infinite;
+}
+@keyframes del
+{
+from
+{
+    transform: rotate3d(0, 1, 0, 0deg);
+}
+to
+{
+    transform: rotate3d(0, 1, 0, 360deg);
+}
 }
