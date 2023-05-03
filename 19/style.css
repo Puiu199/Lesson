@@ -1,0 +1,55 @@
+.users
+{
+    border: 5px solid ;
+    height: 800px !important;
+    width: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 5px 10px grey;
+    
+    padding: 5px;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 15%;
+  border: 4px solid transparent;
+    align-content: space-evenly;
+ 
+}
+#bl
+{
+display: grid;
+}
+button
+{
+    width: 100px !important;
+    height: 35px;
+    margin: 15px !important;
+    color: salmon;
+    background-color: burlywood;
+    border: 1px solid ;
+    border-radius: 15px !important;
+}
+button:hover
+{
+    box-shadow: 1px 5px 10px grey;
+}
+select
+{
+border:none;
+color: black;
+text-shadow: 1px 2px 1px aqua;
+}
+span
+{
+color: violet;
+   text-shadow: none;
+}
+label 
+{ 
+    color: aqua;
+    text-shadow: 1px 2px 1px black;
+}
