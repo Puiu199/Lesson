@@ -30,51 +30,70 @@
 
         let request = true;//как реагируем если начальник согласен
         let work = false; //пишем заявление об уходе
-        function salary(accept,failure){
-            console.log('Вы запросили зарплату...');
-            //генерируем ответ от работодателя случайным образом
-            setTimeout(()=>{
-                if(Math.random() > .5){
-                    accept();
-                }else{
-                    failure();
-                }
-            },2000);
-        };
-
+       
+function salary()
+{
+    console.warn('Вы запросили зарплату...');
+    let prom=new Promise((resolve,reject)=>{
+        setTimeout(()=>
+        {
+            if(Math.random() > .5)
+            {
+                resolve();
+            }
+            else
+            {
+                reject();
+            }
+        },2000)
+    });
+    return prom;
+}
         //покупает турпоездку
         function buyTour(){
             console.log('Вам пологается приз!');
             //выбираем куда поедем
-            if(request){
+            setTimeout(()=>
+        {
+            if(Math.random() > .5)
+            {
                 turkey();
-            }else{
-                paris();
             }
+            else
+            {
+                baks();
+            }
+        },1000)
         }
-
         function turkey(){
             console.log('Едем в Турцию')
         }
         function baks(){
-            console.paris('Едем в Париж');
+            console.log('Едем в Париж');
         }
         //пишем заявление об уходе либо терпим и работаем
         function act(){
-            if(work){
+            if(Math.random()>.5)
+            {
                 console.log('Написать заявление об уходе!')
             }else{
                 console.log('Вернуться работать и ждать з/п!')
             }
         }
 
-        salary(function(){
-            console.log('Одобрение получено');
-            buyTour()
-        },function(){
-            console.error('Просьбу отклонили');
-            act()
-        });
+        salary().then(
+    function()
+    {   console.log('Вам повезло!');
+        
+    }).then(buyTour).catch(function(){
+        console.error('Вам HE повезло!');
+        act();
+        final();
+    })
+        function final()
+        {
+            console.error('"-"');
+        }
         
     </script>
 </body>
