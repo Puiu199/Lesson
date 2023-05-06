@@ -1,0 +1,47 @@
+.squ
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: red;
+    margin: 5px;
+    animation-name: cirtosq;
+    animation-duration: .1s;
+    transition: 10s;
+}
+.cir
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    margin: 5px;
+    animation-name: sqtocir;
+    animation-duration: .1s;
+}
+span
+{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+select
+{
+    width: 100px;
+    height: 20px;
+    box-sizing: border-box;
+    
+}
+@keyframes sqtocir{
+    from {border-radius:0%}
+    to {border-radius: 50%;}
+}
+@keyframes cirtosq 
+{
+ from{border-radius: 50%;}
+ to{border-radius:0%}}
+
