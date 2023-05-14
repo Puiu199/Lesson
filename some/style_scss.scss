@@ -1,0 +1,32 @@
+@mixin stile($wt,$ht)
+{
+    /*Create mixin*/
+    width:$wt;
+    height:$ht;
+    background-color: aqua; 
+}
+.error
+{
+    border: 1px solid red;
+}
+:required
+{
+    /*Use prpreti error in required*/
+    @extend .error
+   
+}
+input
+{   
+    @include stile(150px,50px);
+     /* Use mexin in styles elemnt*/
+
+    &:focus
+    {
+        /* focus on input*/
+        background-color: green;
+    }
+    &:hover
+    {
+        background-color: grey;
+    }
+}

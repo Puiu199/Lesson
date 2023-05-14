@@ -45,6 +45,7 @@
             val1=document.querySelector('#val1');
             sum=document.querySelector('#sum');
             let user_name=document.querySelector('#user_name');
+            
             let[client1,client2]=clients;          
             let{user,password,balance,statusActive,individual,credit,property}=client1;
             let[ban1,ban2]=balance;                   

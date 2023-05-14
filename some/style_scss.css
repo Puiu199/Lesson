@@ -1,0 +1,22 @@
+.error, :required {
+  border: 1px solid red;
+}
+
+:required {
+  /*Use prpreti error in required*/
+}
+
+input {
+  /*Create mixin*/
+  width: 150px;
+  height: 50px;
+  background-color: aqua;
+  /* Use mexin in styles elemnt*/
+}
+input:focus {
+  /* focus on input*/
+  background-color: green;
+}
+input:hover {
+  background-color: grey;
+}/*# sourceMappingURL=style_scss.css.map */

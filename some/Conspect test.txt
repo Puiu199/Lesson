@@ -1,0 +1,48 @@
+Type o date :
+let, boolean,const,var;
+///////////////////////////
+DATE IN MASSIV
+table.Pop()     ---Function for delete the last element in massiv 
+table.Push()    ---Function for write the last element ;
+table.Unshift() ---Function for write element at the first possition;
+table.shift()   ---Function for detele the first element at massiv;
+///////////////////////////
+LACALSTORAGE
+localStorage.setItem('Date1',first_input.value); ---- function for insert date in localStorage;
+console.log(localStorage.getItem('Date1'));  ---- function for write date from localStorage;
+///////////////////////////
+setTimeout(function_name,1000) set time for executation function_name after 1000 mls *! function name without ()
+///////////////////////////
+create constructor and use this
+class set_clas
+{
+    constructor (elem)
+    {
+        this.elem=document.createElement(elem.tag);
+        this.elem.classList=elem.clas;
+        this.elem.style.background=elem.bg
+        document.querySelector('body').append(this.elem)
+    }
+}
+let fig=
+{
+    tag:"div",
+    
+}
+let fig1=
+{
+    clas:'st',
+    bg:"green"
+}
+fig.__proto__.fig1;
+new  set_clas(fig1)
+///////////////////////////
+
+let view_date=
+{
+    view:function(text)
+    {
+        return this.f +" "+this.s +text;
+    }
+}
+view_date.view.call(table1,'Number');
