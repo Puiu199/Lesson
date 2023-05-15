@@ -1,5 +1,22 @@
+
+let table1={First:'',Second:'',Three:'',Four:''};
+console.log(table1);
+/*
+const mirr =(arr1)=>{
+for(let key in table1)
+{
+arr1[key] =key.split('');
+arr1.reverse().join('');}
+return arr1;
+console.log(arr1);
+}
+*/
+var myString = 'Привет, мир. Как дела?';
+var splits = myString.split(' ', 3);
+
+console.log(splits);
+/*
 let table=['1','2','3','4'];
-let table1={f:'First',s:'Second',t:'Three',fo:'Four'};
 let table3=[table,table1];
 let first_input=document.querySelector('#elem');
 function date()
@@ -34,7 +51,6 @@ class set_clas
 let fig=
 {
     tag:"div",
-    
 }
 let fig1=
 {
@@ -43,7 +59,6 @@ let fig1=
 }
 fig.__proto__.fig1;
 new  set_clas(fig1)
-
 let view_date=
 {
     view:function(text)
@@ -52,3 +67,11 @@ let view_date=
     }
 }
 view_date.view.call(table1,'Number');
+
+
+let js=JSON.stringify(table1);
+localStorage.setItem('Datete din tabel',js);
+
+let parse=localStorage.getItem('Datete din tabel');
+
+console.log((JSON.parse(parse)));*/

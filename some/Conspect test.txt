@@ -37,7 +37,6 @@ let fig1=
 fig.__proto__.fig1;
 new  set_clas(fig1)
 ///////////////////////////
-
 let view_date=
 {
     view:function(text)
@@ -46,3 +45,16 @@ let view_date=
     }
 }
 view_date.view.call(table1,'Number');
+///////////////////////////
+
+let js=JSON.stringify(table1); convert to string
+console.log(typeof(js)); 
+let par=JSON.parse(js); convert to object
+console.log((par));
+Example! 
+{
+let js=JSON.stringify(table1); convert to string
+localStorage.setItem('Datete din tabel',js); insert date wichi was convertet to string in localStorage
+let parse=localStorage.getItem('Datete din tabel'); extract date from localStorage and convert 
+console.log((JSON.parse(parse)));
+}
