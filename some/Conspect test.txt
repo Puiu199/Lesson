@@ -1,5 +1,5 @@
 Type o date :
-let, boolean,const,var;
+let,boolean,const,var;
 ///////////////////////////
 DATE IN MASSIV
 table.Pop()     ---Function for delete the last element in massiv 
@@ -7,13 +7,25 @@ table.Push()    ---Function for write the last element ;
 table.Unshift() ---Function for write element at the first possition;
 table.shift()   ---Function for detele the first element at massiv;
 ///////////////////////////
-LACALSTORAGE
-localStorage.setItem('Date1',first_input.value); ---- function for insert date in localStorage;
-console.log(localStorage.getItem('Date1'));  ---- function for write date from localStorage;
+LACAL_STORAGE
+---- Function for insert date in local_Storage;
+{
+localStorage.setItem('Date1',first_input.value);
+}
+---- Function for write date from local_Storage;
+{
+console.log(localStorage.getItem('Date1'));
+}
 ///////////////////////////
-setTimeout(function_name,1000) set time for executation function_name after 1000 mls *! function name without ()
+Set time for executation function_name after 1000 mls *! function name without ()
+{
+    setTimeout(function_name,1000)
+}
 ///////////////////////////
-create constructor and use this
+Create constructor and use this
+
+Constructon (name_name)
+{
 class set_clas
 {
     constructor (elem)
@@ -23,6 +35,7 @@ class set_clas
         this.elem.style.background=elem.bg
         document.querySelector('body').append(this.elem)
     }
+}
 }
 let fig=
 {
@@ -39,22 +52,73 @@ new  set_clas(fig1)
 ///////////////////////////
 let view_date=
 {
-    view:function(text)
+    elem:function(text)
     {
         return this.f +" "+this.s +text;
     }
 }
-view_date.view.call(table1,'Number');
+view_date.elem.call(table1,'Number');
 ///////////////////////////
-
-let js=JSON.stringify(table1); convert to string
-console.log(typeof(js)); 
-let par=JSON.parse(js); convert to object
-console.log((par));
+Convert obj=>string
+    let js=JSON.stringify(table1); 
+    console.log(typeof(js)); 
+Convert string=>obj
+    let par=JSON.parse(js); 
+    console.log((par));
 Example! 
 {
-let js=JSON.stringify(table1); convert to string
-localStorage.setItem('Datete din tabel',js); insert date wichi was convertet to string in localStorage
-let parse=localStorage.getItem('Datete din tabel'); extract date from localStorage and convert 
-console.log((JSON.parse(parse)));
+    let js=JSON.stringify(table1); convert to string
+    localStorage.setItem('Datete din tabel',js); insert date wichi was convertet to string in localStorage
+    let parse=localStorage.getItem('Datete din tabel'); extract date from localStorage and convert 
+    console.log((JSON.parse(parse)));
 }
+///////////////////////////
+-----Example about jQuery(.hide())
+$('button').on('click',function()
+{
+    $('input').hide();
+})
+///////////////////////////
+-----Example about set attr('What_atribut','Name_atribut') 
+$('button').on('click',function()
+{
+   $(this).attr('class','st')
+})
+-----Example how find attr('attr_name')
+///////////////////////////
+-----Example how find element wich hasClass('name_class')
+$('button').on('click',function()
+{
+  if($('label').hasClass('st')== true)
+  {
+    alert("salut");
+  }
+})
+///////////////////////////
+-----Example how to add ('class_name') 
+$('button').on('click',function()
+{
+    console.log($('input').addClass('dsada'));
+})
+///////////////////////////
+-----Example how to remove class ('class_name') 
+$('button').on('click',function()
+{
+    $('label').removeClass('st');
+})
+///////////////////////////
+PROMISS
+let prom=new Promise((resolve, reject) => {
+    setTimeout(()=>
+    {
+       if(Math.random()>.5)
+       {
+        resolve(console.log("ok"));
+       } 
+       else 
+       {
+        reject(console.warn('sadasassdasdas'));
+       }
+    },1000)
+});
+return prom;

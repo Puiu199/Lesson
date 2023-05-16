@@ -1,6 +1,6 @@
 
 let table1={First:'',Second:'',Three:'',Four:''};
-console.log(table1);
+
 /*
 const mirr =(arr1)=>{
 for(let key in table1)
@@ -11,10 +11,14 @@ return arr1;
 console.log(arr1);
 }
 */
-var myString = 'Привет, мир. Как дела?';
-var splits = myString.split(' ', 3);
 
-console.log(splits);
+
+$('button').on('click',function()
+{ 
+    console.log($('.sus').text('adadas'))
+})
+
+
 /*
 let table=['1','2','3','4'];
 let table3=[table,table1];
@@ -59,6 +63,7 @@ let fig1=
 }
 fig.__proto__.fig1;
 new  set_clas(fig1)
+
 let view_date=
 {
     view:function(text)
