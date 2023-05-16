@@ -12,13 +12,11 @@ console.log(arr1);
 }
 */
 
-
-$('button').on('click',function()
+let arr=[];
+$('button').on('click',async function()
 { 
-    console.log($('.sus').text('adadas'))
+     return arr.push($('input').val())
 })
-
-
 /*
 let table=['1','2','3','4'];
 let table3=[table,table1];

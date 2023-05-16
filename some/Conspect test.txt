@@ -67,11 +67,21 @@ Convert string=>obj
     console.log((par));
 Example! 
 {
-    let js=JSON.stringify(table1); convert to string
-    localStorage.setItem('Datete din tabel',js); insert date wichi was convertet to string in localStorage
-    let parse=localStorage.getItem('Datete din tabel'); extract date from localStorage and convert 
+    ----convert obj to string
+    let js=JSON.stringify(table1); 
+    ---insert date wich was convertet to string in localStorage
+    localStorage.setItem('Datete din tabel',js);
+   
+    ----extract date from localStorage and convert 
+    let parse=localStorage.getItem('Datete din tabel'); 
     console.log((JSON.parse(parse)));
 }
+///////////////////////////
+Reade 
+$('button').on('click',function()
+{ 
+    console.log($('.sus').text('some text'))
+})
 ///////////////////////////
 -----Example about jQuery(.hide())
 $('button').on('click',function()
@@ -95,6 +105,16 @@ $('button').on('click',function()
   }
 })
 ///////////////////////////
+------------------------------------------------
+-extratd date on input = ($('input').val())
+-extract text on label = ($('label').text())
+-extract index of select = ($('select').index())
+------------------------------------------------
+$('button').on('click',function()
+{ 
+    console.log($('input').val())
+})
+//////////////////////////
 -----Example how to add ('class_name') 
 $('button').on('click',function()
 {
